@@ -1,2 +1,5 @@
 allowBuilds:
-  esbuild: set this to true or false
+  esbuild: true
+# The app imports @mui/utils, which is installed transitively by @mui/material
+publicHoistPattern:
+  - '@mui/*'

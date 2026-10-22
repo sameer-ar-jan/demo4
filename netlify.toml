@@ -1,0 +1,5 @@
+[build]
+  # Run pnpm through npx so the build works even when pnpm isn't preinstalled.
+  # The install step is a fast no-op when dependencies are already installed.
+  command = "npx -y pnpm@12.14.0 install --frozen-lockfile && npx -y pnpm@12.14.0 run build"
+  publish = ".next"
